@@ -1,0 +1,188 @@
+/* General */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* background-color: #eeeeee; */
+    /* Cor de fundo da página */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.body-bg {
+    background: #0D47A1; /* Cor de fundo azul */
+    color: #ffffff;
+}
+
+
+
+/* Grid */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+.flex-row {
+    display: flex;
+    flex-flow: row;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.flex-column {
+    flex-flow: column;
+    flex-basis: 100%;
+    flex-grow: 1;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+
+/* Inputs & Buttons */
+.input,
+form input,
+form select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button,
+form button {
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0; /* Espaço entre os botões */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    color: #fff;
+    background-color: #a2a4a7;
+    border-color: #868686;
+    padding: 10px 16px;
+    line-height: 1.5;
+    border-radius: 4px;
+}
+
+.button-primary {
+    background-color: #e74747;
+    border-color: #e74747;
+    padding: 4px 10px;
+    color: #ffffff;
+    border-radius: 4px;
+
+}
+
+.button-secondary {
+    background-color: #0D47A1;
+    border-color: #0D47A1;
+    padding: 4px 10px;
+    color: #ffffff;
+    border-radius: 4px;
+}
+
+.button-addTag {
+   background-color: #5098b4;
+   text-align: left;
+   border-color: #5098b4;
+   padding: 4px 10px;
+   color: #ffffff;
+   border-radius: 4px;
+}
+
+/* Mudando a aparência ao passar o mouse */
+.button:hover {
+    background-color: #549be7;
+    border-color: #549be7;
+}
+
+/* Link para voltar ao login */
+.back-to-login {
+    color: #6c63ff;
+    /* Cor de fundo para link de voltar ao login */
+    cursor: pointer;
+    padding: 10px;
+    text-decoration: underline;
+    /* Para parecer um link clicável */
+}
+
+/* Adiciona estilos específicos para o botão Voltar ao login */
+.back-button {
+    background-color: transparent;
+    /* Sem cor de fundo */
+    color: #6c63ff;
+    /* Cor do texto deve combinar com a do fundo */
+    border: none;
+    /* Sem borda */
+    margin-top: 15px;
+    /* Espaço acima do botão */
+    cursor: pointer;
+    /* Cursor do mouse como um ponteiro */
+    text-decoration: underline;
+    /* Sublinhado para indicar que é clicável */
+    padding: 10px 0;
+    /* Padding para aumentar a área clicável */
+    font-size: 1rem;
+    /* Tamanho da fonte */
+    transition: color 0.2s;
+    /* Suaviza a transição de cor */
+}
+
+/* Muda a cor do texto do botão ao passar o mouse */
+.back-button:hover {
+    color: #4b3ca8;
+    /* Cor mais escura para o hover */
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.form-control:focus {
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgba(0,123,255,.25);
+}
+
+.form-group {
+    float: left;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+
+
+/* Cards */
+.card {
+    background: #ffffff;
+    border: 1px solid #dedede;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 16px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    color: #0D47A1;
+}
+
+
+
+/* Utilize media queries se precisar ajustar o layout em diferentes tamanhos de tela */
+@media (max-width: 768px) {
+    /* Seu código para dispositivos móveis aqui */
+}

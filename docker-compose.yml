@@ -1,0 +1,44 @@
+version: "3.8"
+
+services:
+  mymongodb:
+    image: mongo:4.4.6
+
+    container_name: db
+
+    restart: always
+
+    ports:
+      - "27017:27017"
+
+    volumes:
+      - data:/data/db
+
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: "root"
+      MONGO_INITDB_ROOT_PASSWORD: "12345"
+
+  backend:
+    build: ./backend
+
+    ports:
+      - "3333:3333"
+
+    depends_on:
+      - mymongodb
+
+  frontend:
+    build: ./frontend
+
+    ports:
+      - "3000:3000"
+
+    stdin_open: true
+
+    tty: true
+    
+    depends_on:
+      - backend
+
+volumes:
+  data:

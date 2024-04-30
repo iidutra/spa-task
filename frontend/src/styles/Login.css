@@ -1,0 +1,26 @@
+/* Estilização do container e do formulário */
+.login-container {
+  padding: 2rem; /* Padding inside the card */
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+}
+
+/* Títulos acima do formulário */
+.login-title, .register-title {
+  color: #fff; /* Cor do texto */
+  font-size: 2rem; /* Tamanho do texto */
+  margin-bottom: 20px; /* Espaçamento abaixo do título */
+}
+
+.body-card-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-image: linear-gradient(to right, #002366 50%, #FFFFFF 50%);
+}

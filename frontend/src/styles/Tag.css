@@ -1,0 +1,90 @@
+/* src/styles/Tag.css */
+
+.tag-management {
+    background-color: #f3f4f6; /* Cor de fundo mais suave */
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 600px; /* Definindo uma largura máxima para a tabela */
+    margin: 20px auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tag-management-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .tag-add-form input {
+    padding: 8px;
+    margin-right: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .tag-add-form button {
+    padding: 8px 16px;
+    background-color: #0D47A1;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .tag-add-form button:hover {
+    background-color: #186d9e;
+  }
+  
+  .tag-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .tag-table th,
+  .tag-table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .tag-table tr:hover {
+    background-color: #e9ecef;
+  }
+  
+  .tag-table th {
+    background-color: #0D47A1;
+    color: white;
+  }
+  
+  .tag-table button {
+    padding: 4px 8px;
+    margin-right: 4px;
+    border-radius: 4px;
+    border: 1px solid #0D47A1;
+    cursor: pointer;
+  }
+  
+  .tag-table button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Estilos específicos para botões 'Salvar' e 'Cancelar' dentro da tabela */
+.tag-table .button-save {
+   background-color: #28a745;
+   color: white;
+}
+  
+.tag-table .button-cancel {
+   background-color: #dc3545;
+   color: white;
+}
+  
+
+.body-tag-bg {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   height: 100vh; /* Full viewport height */
+   background-color: #0D47A1;
+}
